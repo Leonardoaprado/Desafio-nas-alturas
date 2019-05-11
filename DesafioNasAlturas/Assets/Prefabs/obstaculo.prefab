@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4253825280660511169}
   - component: {fileID: 4253825280660511230}
+  - component: {fileID: 6876801390479525353}
   m_Layer: 0
   m_Name: obstaculo
   m_TagString: Untagged
@@ -46,6 +47,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidade: 0.2
+  variacaoPosicaoy: 1
+--- !u!50 &6876801390479525353
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4253825280660511231}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &4253825281454706089
 GameObject:
   m_ObjectHideFlags: 0
@@ -56,7 +79,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4253825281454706088}
   - component: {fileID: 4253825281454706090}
-  - component: {fileID: 4253825281454706091}
+  - component: {fileID: 9007961622341539414}
   m_Layer: 0
   m_Name: obstaculoBaixo
   m_TagString: Untagged
@@ -72,8 +95,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4253825281454706089}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.1039395, y: -1.942091, z: -0.18041572}
-  m_LocalScale: {x: 1.6672499, y: 1.7999396, z: 1}
+  m_LocalPosition: {x: 5.32, y: -1.977, z: -0.18041572}
+  m_LocalScale: {x: 1.6322377, y: 2.7674212, z: 1}
   m_Children: []
   m_Father: {fileID: 4253825280660511169}
   m_RootOrder: 1
@@ -126,8 +149,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &4253825281454706091
-BoxCollider2D:
+--- !u!60 &9007961622341539414
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -149,9 +172,37 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.08, y: 2.39}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.48999998, y: -0.565}
+      - {x: 0.42999998, y: -0.49499997}
+      - {x: 0.39, y: -0.16499999}
+      - {x: 0.35999998, y: 0.105}
+      - {x: 0.35999998, y: 0.175}
+      - {x: 0.29999998, y: 0.195}
+      - {x: 0.22999999, y: 0.79499996}
+      - {x: 0.21, y: 0.98499995}
+      - {x: 0.19, y: 1.145}
+      - {x: 0.17999999, y: 1.185}
+      - {x: 0.17, y: 1.1949999}
+      - {x: 0.06, y: 1.1949999}
+      - {x: 0.049999997, y: 1.165}
+      - {x: 0, y: 0.92499995}
+      - {x: -0.049999997, y: 0.73499995}
+      - {x: -0.06, y: 0.635}
+      - {x: -0.11, y: 0.445}
+      - {x: -0.16, y: 0.145}
+      - {x: -0.19, y: -0.015}
+      - {x: -0.26999998, y: -0.085}
+      - {x: -0.28, y: -0.114999995}
+      - {x: -0.35999998, y: -0.405}
+      - {x: -0.44, y: -0.705}
+      - {x: -0.47, y: -0.815}
+      - {x: -0.53999996, y: -1.055}
+      - {x: -0.53999996, y: -1.1949999}
+      - {x: 0.53999996, y: -1.1949999}
+      - {x: 0.53999996, y: -1.005}
+      - {x: 0.51, y: -0.775}
 --- !u!1 &4253825281784661849
 GameObject:
   m_ObjectHideFlags: 0
@@ -162,7 +213,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4253825281784661848}
   - component: {fileID: 4253825281784661850}
-  - component: {fileID: 4253825281784661851}
+  - component: {fileID: 2472978358284179444}
   m_Layer: 0
   m_Name: obstaculoCima
   m_TagString: Untagged
@@ -178,8 +229,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4253825281784661849}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.6039395, y: 4.387909, z: -0.18041572}
-  m_LocalScale: {x: 1.0293174, y: 1.30177, z: 1}
+  m_LocalPosition: {x: 6.527, y: 5.351, z: -0.18041572}
+  m_LocalScale: {x: 0.88629997, y: 1.3163954, z: 1}
   m_Children: []
   m_Father: {fileID: 4253825280660511169}
   m_RootOrder: 0
@@ -232,8 +283,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &4253825281784661851
-BoxCollider2D:
+--- !u!60 &2472978358284179444
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -255,6 +306,32 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.08, y: 2.39}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.35, y: -0.16499999}
+      - {x: 0.35999998, y: -0.095}
+      - {x: 0.37, y: -0.005}
+      - {x: 0.39999998, y: 0.255}
+      - {x: 0.42999998, y: 0.505}
+      - {x: 0.48, y: 0.565}
+      - {x: 0.48999998, y: 0.615}
+      - {x: 0.53999996, y: 1.015}
+      - {x: 0.53999996, y: 1.1949999}
+      - {x: -0.53999996, y: 1.1949999}
+      - {x: -0.53999996, y: 1.0849999}
+      - {x: -0.53, y: 1.045}
+      - {x: -0.44, y: 0.705}
+      - {x: -0.37, y: 0.445}
+      - {x: -0.28, y: 0.114999995}
+      - {x: -0.21, y: 0.035}
+      - {x: -0.17999999, y: -0.044999998}
+      - {x: -0.16, y: -0.145}
+      - {x: -0.07, y: -0.585}
+      - {x: 0, y: -0.935}
+      - {x: 0.02, y: -1.025}
+      - {x: 0.049999997, y: -1.155}
+      - {x: 0.07, y: -1.1949999}
+      - {x: 0.17999999, y: -1.1949999}
+      - {x: 0.19999999, y: -1.155}
+      - {x: 0.19999999, y: -1.0649999}
+      - {x: 0.29, y: -0.255}

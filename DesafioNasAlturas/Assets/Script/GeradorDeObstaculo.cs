@@ -11,7 +11,7 @@ public class GeradorDeObstaculo : MonoBehaviour
     [SerializeField]
     private GameObject manualDeInstrucoes;
 
-    private float cronometro = 3f;
+    private float cronometro = 0f;
 
     void Awake()
     {
