@@ -10,6 +10,8 @@ public class aviao : MonoBehaviour
 
     [SerializeField]
     private Diretor diretor;
+
+    private Vector3 posicaoInicial;
     
     
     private void Awake()
@@ -17,12 +19,21 @@ public class aviao : MonoBehaviour
         //Debug.Log("Acordei");
         this.fisica = this.GetComponent<Rigidbody2D>();
         diretor = GameObject.FindObjectOfType<Diretor>();
+        posicaoInicial = this.transform.position;
+    }
+
+    public void Reiniciar()
+    {
+        this.transform.position = posicaoInicial;
+        this.fisica.simulated = true;
     }
     
     private void impulsionar()
     {
+        this.fisica.velocity = Vector2.zero;
         this.fisica.AddForce(Vector2.up * força, ForceMode2D.Impulse);
     }
+
 
     void OnCollisionEnter2D(Collision2D Colisao)
     {
